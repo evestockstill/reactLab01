@@ -8,7 +8,7 @@ export default class Characters extends Component {
   render() {
     const characterData = [...Array(8)].map(() => {
       return {
-        img: 'http://placegoat.com/250/250',
+        img: 'http://placegoat.com/300/300',
         name: chance.name(),
         status: chance.word(),
         species: chance.animal(),

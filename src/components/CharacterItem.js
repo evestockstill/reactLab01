@@ -7,18 +7,30 @@ export default class CharacterItem extends Component {
 
     return (
       <li>
-        <img src={character.img}/>
-        <p>{character.name}</p>
-        <p>STATUS</p>
-        <span>{character.status}</span>
-        <p>SPECIES</p>
-        <span>{character.species}</span>
-        <p>GENDER</p>
-        <span>{character.gender}</span>
-        <p>ORIGIN</p>
-        <span>{character.origin}</span>
-        <p>LAST LOCATION</p>
-        <span>{character.lastLocation}</span>
+        <img src={character.img} />
+        
+        <h3>{character.name}</h3>
+      
+        <p>
+          STATUS
+          <span>{character.status}</span>
+        </p>
+        <p>
+          SPECIES
+          <span>{character.species}</span>
+        </p>
+        <p>
+          GENDER
+          <span>{character.gender}</span>
+        </p>
+        <p>
+          ORIGIN
+          <span>{character.origin}</span>
+        </p>
+        <p>
+          LAST LOCATION
+          <span>{character.lastLocation}</span>
+        </p>
       </li>
     );
   }
