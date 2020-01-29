@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CharacterItem from './CharacterItem';
+import styles from './Character.css';
 import Chance from 'chance';
 const chance = new Chance();
 
@@ -7,7 +8,7 @@ export default class Characters extends Component {
   render() {
     const characterData = [...Array(8)].map(() => {
       return {
-        img: 'http://placegoat.com/150/150',
+        img: 'http://placegoat.com/250/250',
         name: chance.name(),
         status: chance.word(),
         species: chance.animal(),
@@ -21,8 +22,10 @@ export default class Characters extends Component {
       return <CharacterItem key={i} character={char} />;
     });
 
-    return <ul>
-      {CharacterItems}
-    </ul>;
+    return (
+      <div className={styles.cards}>
+        <ul>{CharacterItems}</ul>
+      </div>
+    );
   }
 }

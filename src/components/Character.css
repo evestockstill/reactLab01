@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+   
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  
+}
+.cards {
+  margin: 3rem auto;
+  height: 100%vh;
+
+  ul {
+    display: grid;
+    
+      background:  rgb(32, 35, 41);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6.5rem;
+    li {
+     
+      height: 7rem;
+      width: auto;
+      background:  rgb(32, 35, 41);
+      p {
+        font-size: 1.5rem;
+      }
+      span {
+        color: yellow;
+      }
+    }
+  }
+}

@@ -1,3 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+ 
+}
+
 .Header {
   padding: 1rem;
   font-size: 1.5rem;
@@ -23,11 +36,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 60rem;
+    width: 80rem;
     margin: auto;
     h1 {
       font-weight: 600;
-      font-size: 4rem;
+      font-size: 6rem;
       text-align: center;
       text-transform: uppercase;
     }
@@ -47,12 +60,14 @@
   }
 }
 
+
 .Footer {
   overflow: hidden;
   padding: 1rem;
   background-color: rgb(32, 35, 41);
   color: rgb(158, 158, 158);
   font-size: 1.5rem;
+ margin-top: 25rem;
 
   .stats {
     display: flex;
